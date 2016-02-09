@@ -1,49 +1,130 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </body>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>PoPy screens.ep</title>
+    <link href="Resources/SampleStyle.css" rel="stylesheet">
+</head>
+<body>
+    <h1 id="documentTitle">PoPy screens.ep</h1>
+    <p id="documentMetadata">Exported at: Wed Aug 19 2015 22:36:03 GMT-0400
+    (Eastern Daylight Time)</p>
+    <div class="Page" id="mainscreen_option2_page">
+        <h2>MainScreen Option2</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "mainscreen_option2.png" usemap="#map_mainscreen_option2"
+        width="390"></div><map id="map_mainscreen_option2" name=
+        "map_mainscreen_option2">
+            <area coords="42,377,332,405" href="#imhosting_shopping_list_page"
+            shape="rect" title="Go to page 'ImHosting Shopping List'">
+            <area coords="41,346,331,374" href="#imhosting_menu_list_page"
+            shape="rect" title="Go to page 'ImHosting Menu List'">
+            <area coords="40,312,330,340" href="#imhosting_guest_list_page"
+            shape="rect" title="Go to page 'ImHosting Guest List'">
+            <area coords="41,277,331,305" href="#imhosting_potluck_items_page"
+            shape="rect" title="Go to page 'ImHosting Potluck Items'">
+            <area coords="38,132,358,180" href="#mainscreen_page" shape="rect"
+            title="Go to page 'MainScreen'">
+        </map>
+    </div>
+    <div class="Page" id="mainscreen_page">
+        <h2>MainScreen</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "mainscreen.png" usemap="#map_mainscreen" width=
+        "390"></div><map id="map_mainscreen" name="map_mainscreen">
+            <area coords="40,304,158,368" href="#imhosting_potluck_items_page"
+            shape="rect" title="Go to page 'ImHosting Potluck Items'">
+        </map>
+    </div>
+    <div class="Page" id="imhosting_potluck_items_page">
+        <h2>ImHosting Potluck Items</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "imhosting_potluck_items.png" usemap=
+        "#map_imhosting_potluck_items" width="390"></div><map id=
+        "map_imhosting_potluck_items" name="map_imhosting_potluck_items">
+            <area coords="38,132,358,180" href="#mainscreen_page" shape="rect"
+            title="Go to page 'MainScreen'">
+        </map>
+    </div>
+    <div class="Page" id="imhosting_guest_list_page">
+        <h2>ImHosting Guest List</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "imhosting_guest_list.png" usemap="#map_imhosting_guest_list"
+        width="390"></div><map id="map_imhosting_guest_list" name=
+        "map_imhosting_guest_list">
+            <area coords="41,277,331,305" href="#imhosting_potluck_items_page"
+            shape="rect" title="Go to page 'ImHosting Potluck Items'">
+            <area coords="38,132,358,180" href="#mainscreen_page" shape="rect"
+            title="Go to page 'MainScreen'">
+        </map>
+    </div>
+    <div class="Page" id="imhosting_menu_list_page">
+        <h2>ImHosting Menu List</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "imhosting_menu_list.png" usemap="#map_imhosting_menu_list"
+        width="390"></div><map id="map_imhosting_menu_list" name=
+        "map_imhosting_menu_list">
+            <area coords="197.8000030517578,580,244,604.6000061035156" href=
+            "#imhosting_menuitem_alco_sublist_page" shape="rect" title=
+            "Go to page 'ImHosting Menuitem Alco Sublist'">
+            <area coords=
+            "196.8000030517578,541.5833129882812,245,565.9999847412109" href=
+            "#imhosting_menuitem_shopping_sublist_page" shape="rect" title=
+            "Go to page 'ImHosting Menuitem Shopping Sublist'">
+            <area coords="38,132,358,180" href="#mainscreen_page" shape="rect"
+            title="Go to page 'MainScreen'">
+        </map>
+    </div>
+    <div class="Page" id="imhosting_menuitem_shopping_sublist_page">
+        <h2>ImHosting Menuitem Shopping Sublist</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "imhosting_menuitem_shopping_sublist.png" usemap=
+        "#map_imhosting_menuitem_shopping_sublist" width="390"></div><map id=
+        "map_imhosting_menuitem_shopping_sublist" name=
+        "map_imhosting_menuitem_shopping_sublist">
+            <area coords="37,548,325,596" href=
+            "#imhosting_menuitem_alco_sublist_page" shape="rect" title=
+            "Go to page 'ImHosting Menuitem Alco Sublist'">
+            <area coords="196.8000030517578,420,244,444.6000061035156" href=
+            "#imhosting_menu_list_page" shape="rect" title=
+            "Go to page 'ImHosting Menu List'">
+            <area coords="38,132,358,180" href="#mainscreen_page" shape="rect"
+            title="Go to page 'MainScreen'">
+        </map>
+    </div>
+    <div class="Page" id="imhosting_menuitem_alco_sublist_page">
+        <h2>ImHosting Menuitem Alco Sublist</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "imhosting_menuitem_alco_sublist.png" usemap=
+        "#map_imhosting_menuitem_alco_sublist" width="390"></div><map id=
+        "map_imhosting_menuitem_alco_sublist" name=
+        "map_imhosting_menuitem_alco_sublist">
+            <area coords=
+            "193.8000030517578,423.58331298828125,242,447.99998474121094" href=
+            "#imhosting_menuitem_shopping_sublist_page" shape="rect" title=
+            "Go to page 'ImHosting Menuitem Shopping Sublist'">
+            <area coords="194.8000030517578,473,242,497.6000061035156" href=
+            "#imhosting_menu_list_page" shape="rect" title=
+            "Go to page 'ImHosting Menu List'">
+            <area coords="38,132,358,180" href="#mainscreen_page" shape="rect"
+            title="Go to page 'MainScreen'">
+        </map>
+    </div>
+    <div class="Page" id="imhosting_shopping_list_page">
+        <h2>ImHosting Shopping List</h2>
+        <div class="ImageContainer"><img height="762" src=
+        "imhosting_shopping_list.png" usemap=
+        "#map_imhosting_shopping_list" width="390"></div><map id=
+        "map_imhosting_shopping_list" name="map_imhosting_shopping_list">
+            <area coords="41,346,331,374" href="#imhosting_menu_list_page"
+            shape="rect" title="Go to page 'ImHosting Menu List'">
+            <area coords="40,312,330,340" href="#imhosting_guest_list_page"
+            shape="rect" title="Go to page 'ImHosting Guest List'">
+            <area coords="41,277,331,305" href="#imhosting_potluck_items_page"
+            shape="rect" title="Go to page 'ImHosting Potluck Items'">
+            <area coords="38,132,358,180" href="#mainscreen_page" shape="rect"
+            title="Go to page 'MainScreen'">
+        </map>
+    </div>
+</body>
 </html>
